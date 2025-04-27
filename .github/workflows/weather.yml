@@ -1,9 +1,9 @@
 name: Weather Bot
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *' # Каждый день в 7:00 по Ташкенту (UTC+5)
-  workflow_dispatch:
 
 jobs:
   build:
